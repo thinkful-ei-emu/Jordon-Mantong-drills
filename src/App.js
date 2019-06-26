@@ -10,7 +10,7 @@ function App() {
       <HelloWorld />
       <Bomb />
       <RouletteGun />
-      <Accordion sections={[{ title: 'thing1', content: 'This is thing 1 content.' }, { title: 'thing2', content: 'This is thing 2 content.' }]} />
+      <Accordion sections={[{ title: 'thing1', content: 'This is thing 1 content.' }, { title: 'thing2', content: 'This is thing 2 content.' }, { title: 'thing3', content: 'This is thing 3 content.' }]} />
       {/* content goes here */}
     </main>
   );

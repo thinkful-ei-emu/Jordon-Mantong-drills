@@ -5,16 +5,17 @@ export default class Accordion extends Component {
         current: null
     }
 
-    listenEvent(tab) {
+    onEvent(tab) {
         this.setState({ current: tab })
     }
 
     buttons() {
         return this.props.sections.map((section, key) => (
-            <li key={key} onClick={() => this.listenEvent(key)}>
-                <button>{section.title}</button>
-                {this.renderContent()}
-            </li >
+            //On click 
+            <li key={key} onClick={() => this.onEvent(key)}>
+                {section.title}
+                {(this.state.current === key) && this.renderContent()}
+            </li > //render content section
         ))
     }
 
