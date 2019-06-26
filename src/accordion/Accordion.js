@@ -10,6 +10,7 @@ export default class Accordion extends Component {
     }
 
     buttons() {
+        //map each section/tab
         return this.props.sections.map((section, key) => (
             //On click 
             <li key={key} onClick={() => this.onEvent(key)}>
