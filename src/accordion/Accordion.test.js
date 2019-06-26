@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Accordion from './Accordion';
-import { isTSAnyKeyword } from '@babel/types';
 
 describe("Accordion test", () => {
     const sections = [
